@@ -20,8 +20,8 @@
 <div id="nav">
     <a href="/" id="navElement" class="button is-large is-rounded is-black is-outlined">Home</a>
     <a href="/portfolio" id="navElement" class="button is-large is-rounded is-black is-outlined">Portfolio</a>
-    <a href="about" id="navElement" class="button is-large is-rounded is-black is-outlined">About Me</a>
-    <a href="/posts" id="navElement" class="button is-large is-rounded is-black is-outlined">Blog</a>
+    <a href="/about" id="navElement" class="button is-large is-rounded is-black is-outlined">About Me</a>
+    <a href="/blog" id="navElement" class="button is-large is-rounded is-black is-outlined">Blog</a>
     <a href="/contact" id="navElement" class="button is-large is-rounded is-black is-outlined">Contact</a>
 </div>
 
