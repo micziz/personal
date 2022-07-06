@@ -3,9 +3,7 @@
     @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
     #projects{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         font-size: 30px;
         font-family: 'VT323', monospace;
     }
@@ -18,9 +16,7 @@
     }
 
     #contributions{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         font-size: 30px;
         font-family: 'VT323', monospace;
     }
@@ -52,7 +48,7 @@
 <div id="projects">
     <ul>
         {#each projects as project}
-            <li><a target="_blank" href="https://www.github.com/{project.id}" class="button is-large is-rounded is-black is-outlined" id="btn-projects">
+            <li><a target="_blank" href="https://www.github.com/{project.id}" id="btn-projects" class="button is-large is-rounded is-black is-outlined">
                 {project.name}
             </a></li>
         {/each}
@@ -65,7 +61,7 @@
 <div id="contributions">
     <ul>
         {#each contributions as contribution}
-            <li><a target="_blank" href="https://www.github.com/{contribution.id}" class="button is-large is-rounded is-black is-outlined" id="btn-contributions">
+            <li><a target="_blank" href="https://www.github.com/{contribution.id}" id="btn-contributions" class="button is-large is-rounded is-black is-outlined">
                 {contribution.name}
             </a></li>
         {/each}

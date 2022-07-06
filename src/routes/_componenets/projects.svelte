@@ -3,9 +3,7 @@
     @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
     #projects{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         font-size: 30px;
         font-family: 'VT323', monospace;
     }
@@ -18,9 +16,7 @@
     }
 
     #contributions{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         font-size: 30px;
         font-family: 'VT323', monospace;
     }
