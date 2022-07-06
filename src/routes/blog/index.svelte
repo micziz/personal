@@ -46,7 +46,7 @@
 <div id="projects">
     <ul>
         {#each blogPost as post}
-            <li><a target="_blank" href="/{post.id}" id="btn-projects" class="button is-large is-rounded is-black is-outlined">
+            <li><a target="_blank" href="/blog/{post.id}" id="btn-projects" class="button is-large is-rounded is-black is-outlined">
                 {post.name}
             </a></li>
         {/each}
