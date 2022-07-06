@@ -77,3 +77,4 @@
     </ul>
 </div>
 
+<h2 class="title is-2">I have made a lot of other projects. Check them <a href="/github">here</a></h2>
