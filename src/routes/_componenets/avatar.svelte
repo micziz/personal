@@ -17,5 +17,5 @@
 </style>
 
 <div id="img">
-    <img src="me.jpg" alt="my avatar" on:click={goToGihub} width="300" height="300">
+    <img src="me.jpg" alt="my avatar" on:click={goToGihub} width="200" height="200">
 </div>
