@@ -35,11 +35,20 @@
         { id: "PassMax/PassMax", name: "PassMax"},
         { id: "micziz/SimXV2", name: "SimXV2"},
         { id: "micziz/rplg", name: "RPLG"},
+        { id: "micziz/BWE", name: "A very bad encryptor"},
+        { id: "micziz/pyshell", name: "Pyshell"},
+        { id: "micziz/temperature-conversion", name: "A Temperature Convertor"},
+        { id: "micziz/tetanus", name: "tetanus"},
+        { id: "micziz/PUB", name: "Python Utility Bot"},
+        { id: "micziz/ytspiis", name: "ytsp interactive install script"},
+        { id: "micziz/RPS-RS", name: "rock paper sciccors in rust"},
     ]
 
     let contributions = [
         { id: "ThioJoe/YT-Spammer-Purge", name: "YT-Spammer-Purge"},
         { id: "elebumm/RedditVideoMakerBot", name: "RedditVideoMakerBot"},
+        { id: "LukaHietala/reddit-bot-docs", name: "reddit-bot-docs"},
+        { id: "voletro/wsa-toolbox", name: "Windows Subsystem for Android toolbox"},
     ]
 </script>
 

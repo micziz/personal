@@ -12,9 +12,11 @@
 <style>
     h1{
         text-align: center;
+        font-family: 'VT323', monospace;
     }
     #qaa{
         text-align: center;
+        font-family: 'VT323', monospace;
     }
 </style>
 
