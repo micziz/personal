@@ -20,7 +20,10 @@
     }
 
     #projects{
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         font-size: 30px;
         font-family: 'VT323', monospace;
     }
