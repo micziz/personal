@@ -36,5 +36,5 @@
 <p>Language = {lang}</p>
 
 <div id="generate">
-    <button on:click={generateNew}>Generate</button>
+    <button on:click={generateNew} class="button is-large is-rounded is-black is-outlined">Generate</button>
 </div>
