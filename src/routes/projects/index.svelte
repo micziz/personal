@@ -18,6 +18,7 @@
 <script>
     let projects = [
         { id: "rplg", name: "random programming language generator"},
+        { id: "tpcv", name: "Temperature Convertor"},
     ]
 </script>
 
