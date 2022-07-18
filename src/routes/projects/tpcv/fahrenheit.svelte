@@ -29,6 +29,17 @@
 
     p{
         text-align: center;
+        font-family: 'VT323', monospace;
+    }
+
+    a{
+        font-family: 'VT323', monospace;
+    }
+
+    #btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
@@ -43,5 +54,7 @@
 
 <p>{fTemperature}</p>
 
+<div id="btn">
+    <a href="/projects/tpcv/celcius" class="button is-large is-rounded is-black is-outlined">Celsius</a>
+</div>
 
-<a href="/projects/tpcv/celcius" class="button is-large is-rounded is-black is-outlined">Celsius</a>
