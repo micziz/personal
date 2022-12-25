@@ -1,0 +1,37 @@
+---
+import Html from "./languages/Html.svelte";
+import Css from "./languages/Css.svelte";
+import Js from "./languages/Js.svelte";
+import Ts from "./languages/Ts.svelte";
+import Python from "./languages/Python.svelte";
+import Go from "./languages/Go.svelte";
+---
+
+<h1 id="langTitle">Languages i use:</h1>
+	
+<div id="lang">
+	<Html client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Css client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Js client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Ts client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Python client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Go client:load/>
+</div>
+
+<style>
+    #langTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	
+    #lang{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>

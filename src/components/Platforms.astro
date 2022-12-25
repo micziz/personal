@@ -1,0 +1,26 @@
+---
+import Vercel from "./platforms/Vercel.svelte";
+import Supabase from "./platforms/Supabase.svelte";
+---
+
+<h1 id="frameworksTitle">Platforms on witch i host:</h1>
+	
+<div id="frameworks">
+	<Vercel client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Supabase client:load/>
+</div>
+
+<style>
+    #frameworks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#frameworksTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+</style>

@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Projects from "../components/Projects.astro";
+import Lang from "../components/Lang.astro";
+import Frameworks from "../components/Frameworks.astro";
+import Platforms from "../components/Platforms.astro";
+import OtherTools from "../components/Other-tools.astro";
+import Socials from "../components/Socials.astro";
+import OtherHobbies from "../components/OtherHobbies.astro";
+---
+
+<Layout>
+	<h1 class="title is-1" id="title">Hi! I'm Micziz!</h1>
+	<p id="comment">(i know, stupid name, but hey what can i do all good names were took)</p>
+	
+	<h1 class="title is-2" id="title-1">Projects i created: </h1>
+
+	<Projects/>
+
+	<h1 class="title is-2" id="title-1">Tecnologies i use: </h1>
+	
+    <Lang/>
+	
+	<Frameworks/>
+	
+	<OtherTools/>
+	
+	<Platforms/>
+	
+	<h1 class="title is-2" id="title-1">Other things: </h1>
+
+	<Socials/>
+
+	<OtherHobbies/>
+
+	<div style="margin-bottom: 2rem;"></div>
+	
+	<style>
+		#title{
+			text-align: center;
+			margin-top: 3rem;
+			margin-bottom: 0;
+		}
+
+		#title{
+			text-align: center;
+			margin-top: 3rem;
+			margin-bottom: 0;
+		}
+		
+		#title-1{
+			text-align: center;
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+		}
+		
+		#comment{
+			text-align: center;
+
+			margin-bottom: 3rem;
+		}
+
+		#btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+	</style>
+</Layout>
+

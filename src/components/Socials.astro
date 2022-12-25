@@ -1,0 +1,27 @@
+---
+import Twitter from "./socials/Twitter.svelte";
+import Github from "./socials/Github.svelte";
+---
+
+<h1 id="frameworksTitle">Socials i use:</h1>
+	
+<div id="frameworks">
+    <Twitter client:load/>
+	<div style="margin-right: 2rem;"></div>
+    <Github client:load/>
+</div>
+
+<style>
+    #frameworks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 3rem;
+	}
+	
+	#frameworksTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+</style>

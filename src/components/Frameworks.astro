@@ -1,0 +1,42 @@
+---
+import NodeJs from "./frameworks/NodeJs.svelte";
+import Express from "./frameworks/Express.svelte";
+import Svelte from "./frameworks/Svelte.svelte";
+import Flask from "./frameworks/Flask.svelte";
+import Bulma from "./frameworks/Bulma.svelte";
+import Tailwind from "./frameworks/Tailwind.svelte";
+import Vite from "./frameworks/Vite.svelte";
+---
+
+<h1 id="frameworksTitle">Frameworks i use:</h1>
+	
+<div id="frameworks">
+	<NodeJs client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Svelte client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Vite client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<div style="margin-right: 2rem;"></div>
+	<Express client:load/>
+	<div style="margin-right: 2rem;"></div>
+	<Flask client:load/>
+	<div style="margin-right: 2rem;"></div>
+    <Bulma client:load/>
+	<div style="margin-right: 2rem;"></div>
+    <Tailwind client:load/>
+</div>
+
+<style>
+    #frameworks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#frameworksTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+</style>

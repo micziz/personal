@@ -1,0 +1,33 @@
+---
+import Rollup from "./other-tools/Rollup.svelte";
+import Npm from "./other-tools/Npm.svelte";
+import Pnpm from "./other-tools/Pnpm.svelte";
+import Git from "./other-tools/Git.svelte";
+---
+
+<h1 id="frameworksTitle">Other tools i use:</h1>
+
+<div id="frameworks">
+    <Rollup client:load/>
+    <div style="margin-right: 2rem;"></div>
+    <Npm client:load/>
+    <div style="margin-right: 2rem;"></div>
+    <Pnpm client:load/>
+    <div style="margin-right: 2rem;"></div>
+    <Git client:load/>
+</div>
+
+
+<style>
+    #frameworks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#frameworksTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+</style>
