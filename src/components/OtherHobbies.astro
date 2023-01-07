@@ -1,18 +1,21 @@
 ---
 import Basketball from "./other-hobbies/Basketball.svelte";
 import Chess from "./other-hobbies/Chess.svelte";
+import Football from "./other-hobbies/Football.svelte";
 import Nba from "./other-hobbies/Nba.svelte";
 import Videogames from "./other-hobbies/Videogames.svelte";
 ---
 
-<h1 id="frameworksTitle">Platforms on witch i host:</h1>
+<h1 id="frameworksTitle">Hobbies I Have:</h1>
 	
 <div id="frameworks">
     <Videogames client:load/>
 	<div style="margin-right: 2rem;"></div>
     <Chess client:load/>
 	<div style="margin-right: 2rem;"></div>
-    <Basketball/>
+	<Football client:load/>
+	<div style="margin-right: 2rem;"></div>
+    <Basketball client:load/>
 	<div style="margin-right: 2rem;"></div>
     <Nba client:load/>
 </div>

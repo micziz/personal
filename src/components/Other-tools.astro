@@ -3,11 +3,17 @@ import Rollup from "./other-tools/Rollup.svelte";
 import Npm from "./other-tools/Npm.svelte";
 import Pnpm from "./other-tools/Pnpm.svelte";
 import Git from "./other-tools/Git.svelte";
+import MacOS from "./other-tools/MacOS.svelte";
+import Hyper from "./other-tools/Hyper.svelte";
 ---
 
 <h1 id="frameworksTitle">Other tools i use:</h1>
 
 <div id="frameworks">
+	<MacOS client:load/>
+    <div style="margin-right: 2rem;"></div>
+	<Hyper client:load/>
+    <div style="margin-right: 2rem;"></div>
     <Rollup client:load/>
     <div style="margin-right: 2rem;"></div>
     <Npm client:load/>

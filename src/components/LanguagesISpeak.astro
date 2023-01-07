@@ -1,0 +1,32 @@
+---
+import Eng from "./lang-spoken/Eng.svelte";
+import Esp from "./lang-spoken/Esp.svelte";
+import Ita from "./lang-spoken/Ita.svelte";
+
+---
+
+<h1 id="frameworksTitle">Languages i speak:</h1>
+
+<div id="frameworks">
+    <Eng client:load/>
+    <div style="margin-right: 2rem;"></div>
+    <Ita client:load/>
+    <div style="margin-right: 2rem;"></div>
+    <Esp client:load/>
+    <div style="margin-right: 2rem;"></div>
+</div>
+
+
+<style>
+    #frameworks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#frameworksTitle{
+		text-align: center;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+</style>

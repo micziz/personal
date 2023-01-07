@@ -8,35 +8,72 @@ import Platforms from "../components/Platforms.astro";
 import OtherTools from "../components/Other-tools.astro";
 import Socials from "../components/Socials.astro";
 import OtherHobbies from "../components/OtherHobbies.astro";
+import LanguagesISpeak from "../components/LanguagesISpeak.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout>
-	<h1 class="title is-1" id="title">Hi! I'm Micziz!</h1>
-	<p id="comment">(i know, stupid name, but hey what can i do all good names were took)</p>
+	<div class="hidden">
+		<h1 class="title is-1" id="title">Hi! I'm Micziz!</h1>
+	</div>
+	<div class="hidden">
+		<p id="comment">(i know, stupid name, but hey what can i do all good names were took)</p>
+	</div>
 	
-	<h1 class="title is-2" id="title-1">Projects i created: </h1>
-
-	<Projects/>
-
-	<h1 class="title is-2" id="title-1">Tecnologies i use: </h1>
+	<div class="hidden">
+		<Contact/>
+	</div>
 	
-    <Lang/>
+	<div class="hidden">
+		<h1 class="title is-2" id="title-1">Projects i created: </h1>
+	</div>
 	
-	<Frameworks/>
+	<div class="hidden">
+		<Projects/>
+	</div>
 	
-	<OtherTools/>
+	<div class="hidden">
+		<h1 class="title is-2" id="title-1">Tecnologies i use: </h1>
+	</div>
 	
-	<Platforms/>
+	<div class="hidden">
+		<Lang/>
+	</div>
 	
-	<h1 class="title is-2" id="title-1">Other things: </h1>
-
-	<Socials/>
-
-	<OtherHobbies/>
-
-	<div style="margin-bottom: 2rem;"></div>
+	<div class="hidden">
+		<Frameworks/>
+	</div>
 	
-	<style>
+	<div class="hidden">		
+		<OtherTools/>
+	</div>
+	
+	<div class="hidden">
+		<Platforms/>
+	</div>
+	
+	<div class="hidden">
+		<h1 class="title is-2" id="title-1">Other things: </h1>
+	</div>
+	
+	<div class="hidden">
+		<LanguagesISpeak/>
+	</div>
+	
+	<div class="hidden">
+		<Socials/>
+	</div>
+	
+	<div class="hidden">
+		<OtherHobbies/>
+	</div>
+	
+	<div class="hidden">
+		<div style="margin-bottom: 2rem;"></div>
+	</div>
+</Layout>
+	
+<style>
 		#title{
 			text-align: center;
 			margin-top: 3rem;
@@ -67,6 +104,38 @@ import OtherHobbies from "../components/OtherHobbies.astro";
             align-items: center;
             margin-top: 2rem;
         }
-	</style>
-</Layout>
 
+		.hidden{
+			opacity: 0;
+			filter: blur(5px);
+			transform: translateX(-100%);
+			transition: all 1s;
+		}
+
+		.show{
+			opacity: 1;
+			filter: blur(0);
+			transform: translateX(0);
+		}
+
+		@media(prefers-reduced-motion){
+			.hidden{
+				transition: none;
+			}
+		}
+</style>
+
+
+<script defer>
+	const observer = new IntersectionObserver((entires) => {
+		entires.forEach((entry) => {
+			if (entry.isIntersecting){
+				entry.target.classList.add('show');
+			} else {
+				entry.target.classList.remove('show');
+			}
+		})
+	})
+	const hiddenElements = document.querySelectorAll('.hidden')
+	hiddenElements.forEach((el) => observer.observe(el))
+</script>
